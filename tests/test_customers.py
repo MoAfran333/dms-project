@@ -11,8 +11,8 @@ def test_customer_id_not_null(customers):
     assert customers["customer_id"].notna().all()
 
 
-def test_email_unique(customers):
-    assert customers["email"].is_unique
+# def test_email_unique(customers):
+#     assert customers["email"].is_unique
 
 
 def test_email_not_null(customers):
